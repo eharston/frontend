@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>webpage</title>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <!-- heading with id to act as reference for back to top of page link before body closing tag -->
+    <h1 id="top"></h1>
+
+    <a href="./about.html">About</a>
+
+    <h1>This is local linux image!</h1>
+
+    <!-- static locally stored image -->
+
+    <img src="../images/linux.jpg" alt="local linux.jpg" />
+
+    <!-- examples of local/remote image embedded in link. alt="" displays alternatve text if image is unavailable, target="_blank" opens new tab so user doesn't leave the site -->
+
+    <h1>This is an image link with locally stored image!</h1>
+    <a href="https://www.google.com" target="_blank">
+      <img src="../images/google.png" alt="google.jpg"
+    /></a>
+
+    <br />
+    <br />
+
+    <h1>This is an image link using remote image!</h1>
+    <a
+      href="https://media.istockphoto.com/id/502558343/photo/man-sitting-the-macbook-retina-with-site-google-on-screen.jpg?s=1024x1024&w=is&k=20&c=f8PpQP5qNAqYxviLdo-wjbz_3Jsf7alQXpRfC174MHI="
+      target="_blank"
+    >
+      <img
+        src="https://media.istockphoto.com/id/502558343/photo/man-sitting-the-macbook-retina-with-site-google-on-screen.jpg?s=612x612&w=is&k=20&c=x_DwXPWTwecsvjQZim2Ud8WrLcYf780PHTqTRZ380bI="
+        alt="weblink google.jpg"
+    /></a>
+
+    <!-- example of sup and sub -->
+
+    <h1>This <sup>is</sup> sup and <sub>this</sub>is sub !!!!</h1>
+
+    <!-- This is paragraph with emmet word generator -->
+
+    <h1>
+      This is paragraph using emmet lorem word generator with strong tag for
+      bold an em for italic!
+    </h1>
+
+    <p>
+      Lorem ipsum dolor sit <strong>amet consectetur</strong> adipisicing elit.
+      Maxime eaque, quas ratione quam laudantium magni
+      <em>ex corrupti molestiae</em> at, officia quos sapiente eum, id ducimus!
+    </p>
+    <!-- example of special charactore & code and semicolon -->
+    <h1>Example of special character - copyright &copy;</h1>
+    <!-- Example of unordered and ordered lists  -->
+
+    <h1>unordered list</h1>
+
+    <ul>
+      <li><a href="https://www.google.com">google</a></li>
+      <li><a href="https://www.google.com">google</a></li>
+      <li><a href="https://www.google.com">google</a></li>
+      <li><a href="https://www.google.com">google</a></li>
+      <li><a href="https://www.google.com">google</a></li>
+    </ul>
+
+    <h1>ordered list</h1>
+
+    <ol>
+      <li><a href="https://www.google.com">google</a></li>
+      <li><a href="https://www.google.com">google</a></li>
+      <li><a href="https://www.google.com">google</a></li>
+      <li><a href="https://www.google.com">google</a></li>
+      <li><a href="https://www.google.com">google</a></li>
+    </ol>
+
+    <!-- Table example -->
+
+    <!-- emmet command table>tr>th{Title} * 3 + tr>td{Name} * 3 + tr>td{date} * 3 + tr>td{time} * 3 -->
+
+    <h1>Table</h1>
+
+    <table>
+      <tr>
+        <th>Title</th>
+        <th>Title</th>
+        <th>Title</th>
+      </tr>
+      <tr>
+        <td>Name</td>
+        <td>Name</td>
+        <td>Name</td>
+      </tr>
+      <tr>
+        <td>date</td>
+        <td>date</td>
+        <td>date</td>
+      </tr>
+      <tr>
+        <td>time</td>
+        <td>time</td>
+        <td>time</td>
+      </tr>
+    </table>
+
+    <!-- form example -->
+
+    <form action="" method="">
+      <h1>Form</h1>
+      <br />
+      <h1>Please select favorite language</h1>
+      <br />
+
+      <input type="radio" name="language" id="" value="HTML" />
+      <label for="HTML">HTML</label>
+      <input type="radio" name="language" id="" value="Python" />
+      <label for="Python">Python</label>
+      <input type="radio" name="language" id="" value="Javascript" />
+      <label for="Javascript">Javascript</label>
+
+      <br />
+      <br />
+      <h1>Reason for selection</h1>
+      <textarea name="Reason" id="" cols="30" rows="10"></textarea>
+      <br />
+      <br />
+      <label for="Name">First name</label>
+      <input type="text" name="Name" id="Name" />
+      <br />
+      <br />
+      <label for="Lastname">Lastname</label>
+      <input type="text" name="Lastname" id="Lastname" />
+      <br />
+      <br />
+      <label for="Email">Email</label>
+      <input
+        type="email"
+        placeholder="johndoe@gmail.com"
+        name="Email"
+        id="Email"
+      />
+      <br />
+      <br />
+      <label for="Password">Password</label>
+      <input
+        type="password"
+        placeholder="Password"
+        name="Password"
+        id="Password"
+      />
+      <br />
+      <br />
+      <label for="Submit">Submit</label>
+      <button type="submit">Submit</button>
+      <br />
+      <br />
+      <label for="Reset">Reset</label>
+      <button type="reset">Reset</button>
+      <br />
+    </form>
+    <br />
+    <br />
+    <!-- link referencing "#id" set at top of page in h1 -->
+    <a href="#top">Back to Top</a>
+  </body>
+</html>
