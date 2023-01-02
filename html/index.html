@@ -21,7 +21,7 @@
 
     <!-- examples of local/remote image embedded in link. alt="" displays alternatve text if image is unavailable, target="_blank" opens new tab so user doesn't leave the site -->
 
-    <h1>This is an image link with locally stored image!</h1>
+    <h1>Image link with locally stored image!</h1>
     <a href="https://www.google.com" target="_blank">
       <img src="../images/google.png" alt="google.jpg"
     /></a>
@@ -29,7 +29,7 @@
     <br />
     <br />
 
-    <h1>This is an image link using remote image!</h1>
+    <h1>Image link using remote image!</h1>
     <a
       href="https://media.istockphoto.com/id/502558343/photo/man-sitting-the-macbook-retina-with-site-google-on-screen.jpg?s=1024x1024&w=is&k=20&c=f8PpQP5qNAqYxviLdo-wjbz_3Jsf7alQXpRfC174MHI="
       target="_blank"
@@ -115,16 +115,40 @@
       <br />
       <h1>Please select favorite language</h1>
       <br />
-
-      <input type="radio" name="language" id="" value="HTML" />
-      <label for="HTML">HTML</label>
-      <input type="radio" name="language" id="" value="Python" />
-      <label for="Python">Python</label>
-      <input type="radio" name="language" id="" value="Javascript" />
-      <label for="Javascript">Javascript</label>
+      <!-- Radio buttons -->
+      <input type="radio" name="language" id="" value="html" />
+      <label for="html">HTML</label>
+      <input type="radio" name="language" id="" value="python" />
+      <label for="python">Python</label>
+      <input type="radio" name="language" id="" value="javascript" />
+      <label for="javascript">Javascript</label>
 
       <br />
       <br />
+      <!-- Check boxes -->
+      <h1>Please select your favorite color</h1>
+      <input type="checkbox" name="favcolor" checked value="red" id="" />
+      <label for="red">Red</label>
+      <input type="checkbox" name="favcolor" value="green" id="" />
+      <label for="green">Green</label>
+      <input type="checkbox" name="favcolor" value="blue" id="" />
+      <label for="blue">Blue</label>
+
+      <br />
+      <br />
+      <!-- Example of select/option elements -->
+      <p>Please select favorite color!</p>
+
+      <select name="favcolor" id="">
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+      </select>
+
+      <br />
+      <br />
+
+      <!-- Text area example -->
       <h1>Reason for selection</h1>
       <textarea name="Reason" id="" cols="30" rows="10"></textarea>
       <br />
@@ -163,6 +187,19 @@
       <button type="reset">Reset</button>
       <br />
     </form>
+    <br />
+    <br />
+
+    <!-- Example of a semantic element in html = section/article  elements -->
+    <section>
+      <h1>Test heading for section</h1>
+      <p>Test paragraph for section</p>
+    </section>
+
+    <article>
+      <h1>Test heading for article</h1>
+      <p>Test paragraph for article</p>
+    </article>
     <br />
     <br />
     <!-- link referencing "#id" set at top of page in h1 -->
